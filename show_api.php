@@ -1,9 +1,17 @@
 <?php
+//Author: F.Danial
+
 date_default_timezone_set('Asia/Singapore');
 if (defined('STDIN')){
 	$state = $argv[1];
 } else {
-	$state = $_GET['state'];
+	$state_state = $_GET['state'];
+	$area_state = $_GET['area'];
+	if ($state_state != ""){
+		$state = "state=".$state_state;
+	} else if ($area_state != ""){
+		$state = "area=".$area_state;
+	}
 }
 $state_arr = explode("=", $state);
 $state_arr[0] = strtolower($state_arr[0]);
