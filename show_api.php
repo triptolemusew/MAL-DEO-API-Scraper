@@ -1,5 +1,5 @@
 <?php
-//Author: F.Danial
+//Author: Triptolemusew
 
 date_default_timezone_set('Asia/Singapore');
 if (defined('STDIN')){
